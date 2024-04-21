@@ -2,10 +2,10 @@ import eruda from 'eruda';
 
 
 eruda.init({
-	container: document.body,
+	// container: document.body,
 	autoScale: true,
 	defaults: {
-		displaySize: 100
+		displaySize: 99
 	}
 });
 eruda._devTools.show();

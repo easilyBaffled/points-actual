@@ -324,6 +324,11 @@ const newmd = template(newState);
 // logTaskTable(newState.taskList.active);
 // console.log(newState);
 console.log(newmd);
+
+document.body.querySelector('#copy').addEventListener('click', () => {
+  navigator.clipboard.writeText(newmd);
+})
+
 // getWorkDuration(newState);
 displayDayBydayLimits(dayByDay);
 
