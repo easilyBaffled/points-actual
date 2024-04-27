@@ -125,7 +125,7 @@ function constructState(pointsMarkdown) {
             .substring(0, 3)
             .toLowerCase()
       )
-    );
+    ).map( s => s.replace(/#on-\w+/, '#today') );
     draft.streaks = parseStreaks(getStreaks(pointsMarkdown));
     draft.tabs = parseTabs(pointsMarkdown);
     draft.alias = parseAlias(getAlias(pointsMarkdown));
